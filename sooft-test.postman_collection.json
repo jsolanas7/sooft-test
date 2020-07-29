@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "5c6cdf0f-1388-401d-b2f6-90df4c82c48f",
+		"name": "sooft-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create restaurant 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"El club de la milanesa\",\r\n\"kindOfRestaurant\": \"Restaurant de comida rapida\",\r\n\"specials\": [\"pollo\",\"pescado\",\"milanesa\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4500/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get restaurants with kind of restaurant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4500/getRestaurants/kindOfRestaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"getRestaurants",
+						"kindOfRestaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all restaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4500/getRestaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"getRestaurants"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
