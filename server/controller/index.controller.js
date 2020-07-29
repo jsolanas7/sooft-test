@@ -1,7 +1,6 @@
 const express = require('express');
 const Restaurant = require('../data/restaurants');
 const app = express();
-const listRestaurants = [];
 
 
 app.post('/create', (req, res) => {
